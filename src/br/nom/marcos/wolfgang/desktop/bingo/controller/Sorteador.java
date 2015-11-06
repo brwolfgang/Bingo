@@ -1,3 +1,5 @@
+package br.nom.marcos.wolfgang.desktop.bingo.controller;
+
 import java.util.LinkedList;
 import java.util.Random;
 
@@ -15,7 +17,7 @@ public class Sorteador {
     }
 
     /**
-     * Sorteia números do bingo respeitando o limite imposto por Sorteador.LIMITE_NUMEROS.
+     * Sorteia números do bingo respeitando o limite imposto por br.nom.marcos.wolfgang.desktop.bingo.controller.Sorteador.LIMITE_NUMEROS.
      * Este método garante que não serão sorteados números repetidos.
      * @return O número sorteado ou 0 caso não haja mais números a serem sorteados
      */
