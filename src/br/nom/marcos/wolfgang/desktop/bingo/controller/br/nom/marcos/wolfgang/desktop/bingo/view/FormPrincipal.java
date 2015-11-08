@@ -117,6 +117,7 @@ public class FormPrincipal {
     private JLabel lblQuartaLetra;
     private JPanel panQuintaLetra;
     private JLabel lblQuintaLetra;
+    private JButton btnOpcoes;
 
     private LinkedList<JLabel> lstNumeros;
     private Sorteador sorteador;
@@ -276,6 +277,13 @@ public class FormPrincipal {
         lblNumero.setForeground(color);
     }
 
+    private void editarOpcoes(){
+        JFrame frame = new JFrame("Editar opções");
+        frame.setLocationRelativeTo(panPrincipal);
+        new FormOpcoes(this, frame);
+        frame.setVisible(true);
+    }
+
     public void setLetras(String[] letras){
         if(letras.length == 5) {
             this.letras = letras;
@@ -296,6 +304,12 @@ public class FormPrincipal {
                 int resposta = JOptionPane.showConfirmDialog(panPrincipal, "Deseja realmente iniciar um novo sorteio?", "Novo sorteio", JOptionPane.OK_CANCEL_OPTION);
                 if(resposta == 0)
                     initSorteio();
+            }
+        });
+        btnOpcoes.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                editarOpcoes();
             }
         });
     }
