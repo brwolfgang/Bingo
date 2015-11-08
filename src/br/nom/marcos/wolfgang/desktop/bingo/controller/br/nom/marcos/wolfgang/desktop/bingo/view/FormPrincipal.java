@@ -1,0 +1,117 @@
+package br.nom.marcos.wolfgang.desktop.bingo.controller.br.nom.marcos.wolfgang.desktop.bingo.view;
+
+import javax.swing.*;
+
+/**
+ * Created by Wolfgang on 07/11/2015.
+ */
+public class FormPrincipal {
+    private JPanel panSorteio;
+    private JPanel panTabelaSorteados;
+    private JLabel lblLetraSorteada;
+    private JLabel lblNumeroSorteado;
+    private JPanel panInfoSorteio;
+    private JPanel panSorteioComando;
+    private JButton btnSortear;
+    private JButton btnReiniciarSorteio;
+    private JButton btnMisturarPedras;
+    private JPanel panNum1_7;
+    private JLabel lblNum01;
+    private JLabel lblNum02;
+    private JLabel lblNum03;
+    private JLabel lblNum04;
+    private JLabel lblNum05;
+    private JLabel lblNum06;
+    private JLabel lblNum07;
+    private JPanel panNum8_14;
+    private JLabel lblNum08;
+    private JLabel lblNum09;
+    private JLabel lblNum10;
+    private JLabel lblNum11;
+    private JLabel lblNum12;
+    private JLabel lblNum13;
+    private JLabel lblNum14;
+    private JLabel lblNum15;
+    private JPanel panPrimeiraLetra;
+    private JPanel panSegundaLetra;
+    private JPanel panNum16_22;
+    private JPanel panNum23_29;
+    private JLabel lblNum30;
+    private JLabel lblNum16;
+    private JLabel lblNum17;
+    private JLabel lblNum18;
+    private JLabel lblNum19;
+    private JLabel lblNum20;
+    private JLabel lblNum21;
+    private JLabel lblNum22;
+    private JLabel lblNum23;
+    private JLabel lblNum24;
+    private JLabel lblNum25;
+    private JLabel lblNum26;
+    private JLabel lblNum27;
+    private JLabel lblNum28;
+    private JLabel lblNum29;
+    private JLabel lblNum31;
+    private JPanel panTerceiraLetra;
+    private JLabel lblNum32;
+    private JLabel lblNum33;
+    private JLabel lblNum34;
+    private JLabel lblNum35;
+    private JLabel lblNum36;
+    private JLabel lblNum37;
+    private JPanel panNum31_37;
+    private JPanel panNum38_44;
+    private JLabel lblNum38;
+    private JLabel lblNum39;
+    private JLabel lblNum40;
+    private JLabel lblNum41;
+    private JLabel lblNum42;
+    private JLabel lblNum43;
+    private JLabel lblNum44;
+    private JLabel lblNum45;
+    private JPanel panQuartaLetra;
+    private JPanel panNum46_52;
+    private JPanel panNum53_59;
+    private JLabel lblNum46;
+    private JLabel lblNum47;
+    private JLabel lblNum48;
+    private JLabel lblNum49;
+    private JLabel lblNum50;
+    private JLabel lblNum51;
+    private JLabel lblNum52;
+    private JLabel lblNum53;
+    private JLabel lblNum54;
+    private JLabel lblNum55;
+    private JLabel lblNum56;
+    private JLabel lblNum57;
+    private JLabel lblNum58;
+    private JLabel lblNum59;
+    private JLabel lblNum60;
+    private JPanel panQuintaLetra;
+    private JPanel panNum61_67;
+    private JPanel panNum68_74;
+    private JLabel lblNum75;
+    private JPanel panPrincipal;
+    private JLabel lblNum61;
+    private JLabel lblNum62;
+    private JLabel lblNum63;
+    private JLabel lblNum64;
+    private JLabel lblNum65;
+    private JLabel lblNum66;
+    private JLabel lblNum67;
+    private JLabel lblNum68;
+    private JLabel lblNum69;
+    private JLabel lblNum70;
+    private JLabel lblNum71;
+    private JLabel lblNum72;
+    private JLabel lblNum73;
+    private JLabel lblNum74;
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Bingo");
+        frame.setContentPane(new FormPrincipal().panPrincipal);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+    }
+}
