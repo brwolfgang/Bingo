@@ -125,7 +125,7 @@ public class FormPrincipal {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Bingo");
         frame.setContentPane(new FormPrincipal().panPrincipal);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setMinimumSize(new Dimension(900, 500));
         frame.pack();
         frame.setVisible(true);
@@ -288,6 +288,14 @@ public class FormPrincipal {
             @Override
             public void actionPerformed(ActionEvent e) {
                 sortearNumero();
+            }
+        });
+        btnReiniciarSorteio.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int resposta = JOptionPane.showConfirmDialog(panPrincipal, "Deseja realmente iniciar um novo sorteio?", "Novo sorteio", JOptionPane.OK_CANCEL_OPTION);
+                if(resposta == 0)
+                    initSorteio();
             }
         });
     }
