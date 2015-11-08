@@ -1,4 +1,4 @@
-package br.nom.marcos.wolfgang.desktop.bingo.controller.br.nom.marcos.wolfgang.desktop.bingo.view;
+package br.nom.marcos.wolfgang.desktop.bingo.view;
 
 import br.nom.marcos.wolfgang.desktop.bingo.controller.Sorteador;
 
