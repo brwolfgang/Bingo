@@ -285,6 +285,14 @@ public class FormPrincipal {
         frame.setVisible(true);
     }
 
+    private void misturarPedras(){
+        JFrame frame = new JFrame("Misturar pedras");
+        frame.setLocationRelativeTo(panPrincipal);
+        frame.setMinimumSize(new Dimension(400,200));
+        new FormMisturarPedras(frame);
+        frame.setVisible(true);
+    }
+
     public void setLetras(String[] letras){
         if(letras.length == 5) {
             this.letras = letras;
@@ -311,6 +319,12 @@ public class FormPrincipal {
             @Override
             public void actionPerformed(ActionEvent e) {
                 editarOpcoes();
+            }
+        });
+        btnMisturarPedras.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                misturarPedras();
             }
         });
     }
