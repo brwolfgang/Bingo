@@ -280,6 +280,7 @@ public class FormPrincipal {
     private void editarOpcoes(){
         JFrame frame = new JFrame("Editar opções");
         frame.setLocationRelativeTo(panPrincipal);
+        frame.setMinimumSize(new Dimension(400,200));
         new FormOpcoes(this, frame);
         frame.setVisible(true);
     }
