@@ -133,6 +133,7 @@ public class FormPrincipal {
     }
 
     public FormPrincipal() {
+        initLookAndFeel();
         initListaNumeros();
         initComponentes();
         initSorteio();
@@ -238,6 +239,20 @@ public class FormPrincipal {
         lstNumeros.add(lblNum73);
         lstNumeros.add(lblNum74);
         lstNumeros.add(lblNum75);
+    }
+
+    private void initLookAndFeel(){
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (UnsupportedLookAndFeelException e) {
+            e.printStackTrace();
+        }
     }
 
     private void sortearNumero(){
